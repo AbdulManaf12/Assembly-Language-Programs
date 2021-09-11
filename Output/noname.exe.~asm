@@ -1,0 +1,24 @@
+.Model Small
+.Stack 100h
+.Code
+
+main proc
+jmp 5
+
+Mov Ah, 02
+Mov Dl, 'A'
+int 21h
+
+Mov Ah, 02
+Mov Dl, 'B'
+int 21h
+
+5:
+Mov Ah, 02
+Mov Dl, 'C'
+int 21h
+
+Mov Ah, 4ch
+int 21h
+main endp
+
